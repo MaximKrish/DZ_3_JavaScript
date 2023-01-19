@@ -21,10 +21,123 @@
         на разность, функция должна вычесть из большего числа меньшее, либо вернуть 0, если числа равны. Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать не нужно.</p>
 
 
-
-
     <script src="script.js"></script>
     <script>
+        // 1.
+        let numA = Number(prompt('Введите число a'));
+        let numB = Number(prompt('Введите число b'));
+        console.log('Задание 1')
+
+        function numberKub() {
+            return sumNumber = numA ** 3 + numB ** 3;
+        }
+        numberKub();
+        console.log(numberKub());
+
+        console.log('Задание 1 вариант 2')
+        const numKub = () => numA ** 3 + numB ** 3;
+        console.log(numKub());
+
+        // 2.
+        let numMoney = prompt('Введите сумму заработной платы');
+        console.log('Задание 2');
+
+        function nalogMoney() {
+            if (isNaN(numMoney)) {
+                console.log(`Вы ввели не число`);
+            } else {
+                return numMoney * 0.87;
+            }
+        }
+        nalogMoney();
+        console.log(`Размер заработной платы за вычетом налогов равен значение ${nalogMoney()}`);
+
+        console.log('Задание 2 вариант 2');
+        const nalMoney = () => {
+            if (isNaN(numMoney)) {
+                console.log(`Вы ввели не число`);
+            } else {
+                return numMoney * 0.87;
+            }
+        }
+        nalMoney();
+        console.log(`Размер заработной платы за вычетом налогов равен значение ${nalMoney()}`);
+
+
+
+        // 3.
+        let numC = Number(prompt('Введите число c'));
+        let numD = Number(prompt('Введите число d'));
+        let numE = Number(prompt('Введите число e'));
+        console.log('Задание 3');
+        const numMax = () => Math.max(numC, numD, numE)
+        console.log(`максимальное значение среди этих чисел ${numMax()}`);
+
+        console.log('Задание 3 вариант 2');
+
+        function numberMax() {
+            if (numC > numD) {
+                maxNumber = numC;
+            } else {
+                maxNumber = numD;
+            }
+            if (numE > maxNumber) {
+                maxNumber = numE;
+            }
+            return maxNumber;
+        }
+        console.log(`максимальное значение среди этих чисел ${numberMax()}`);
+
+
+        // 4.
+        let numF = Number(prompt('Введите число f'));
+        let numG = Number(prompt('Введите число g'));
+        console.log('Задание 4');
+
+        function addNum() {
+            return sumNumber = numF + numG;
+        }
+
+        function difNum() {
+            if (numF >= numG) {
+                return difNumber = numF - numG;
+            } else {
+                return difNumber = numG - numF;
+            }
+        }
+
+        function multNum() {
+            return multNumber = numF * numG;
+        }
+
+        function divNum() {
+            return divNumber = numF / numG;
+        }
+
+        addNum();
+        difNum();
+        multNum();
+        divNum();
+        console.log(`сложение чисел f и g ${addNum()}`);
+        console.log(`разность чисел f и g  ${difNum()}`);
+        console.log(`умножение чисел f и g  ${multNum()}`);
+        console.log(`деление чисел f и g ${divNum()}`);
+
+        console.log('Задание 4 вариант 2');
+        const addNumber = () => numF + numG;
+        const diffNumber = () => {
+            if (numF >= numG) {
+                return numF - numG;
+            } else {
+                return numG - numF;
+            }
+        }
+        const multtNumber = () => numF * numG;
+        const divvNumber = () => numF / numG;
+        console.log(`сложение чисел f и g ${addNumber()}`);
+        console.log(`разность чисел f и g  ${diffNumber()}`);
+        console.log(`умножение чисел f и g ${multtNumber()}`);
+        console.log(`деление чисел f и g ${divvNumber()}`);
     </script>
 </body>
 
