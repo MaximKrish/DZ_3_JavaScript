@@ -32,11 +32,11 @@
             return sumNumber = numA ** 3 + numB ** 3;
         }
         numberKub();
-        console.log(numberKub());
+        console.log(`Сумма ${numA} в третьей степени и ${numB} в третьей степени равна ${numberKub()}`);
 
         console.log('Задание 1 вариант 2')
         const numKub = () => numA ** 3 + numB ** 3;
-        console.log(numKub());
+        console.log(`Сумма ${numA} в третьей степени и ${numB} в третьей степени равна ${numKub()}`);
 
         // 2.
         let numMoney = prompt('Введите сумму заработной платы');
@@ -45,6 +45,7 @@
         function nalogMoney() {
             if (isNaN(numMoney)) {
                 console.log(`Вы ввели не число`);
+                return;
             } else {
                 return numMoney * 0.87;
             }
@@ -118,10 +119,10 @@
         difNum();
         multNum();
         divNum();
-        console.log(`сложение чисел f и g ${addNum()}`);
-        console.log(`разность чисел f и g  ${difNum()}`);
-        console.log(`умножение чисел f и g  ${multNum()}`);
-        console.log(`деление чисел f и g ${divNum()}`);
+        console.log(`сложение чисел ${numF} и ${numG} равна ${addNum()}`);
+        console.log(`разность чисел ${numF} и ${numG}  равна ${difNum()}`);
+        console.log(`умножение чисел ${numF} и ${numG}  равна ${multNum()}`);
+        console.log(`деление чисел ${numF} и ${numG} равна ${divNum()}`);
 
         console.log('Задание 4 вариант 2');
         const addNumber = () => numF + numG;
@@ -134,10 +135,10 @@
         }
         const multtNumber = () => numF * numG;
         const divvNumber = () => numF / numG;
-        console.log(`сложение чисел f и g ${addNumber()}`);
-        console.log(`разность чисел f и g  ${diffNumber()}`);
-        console.log(`умножение чисел f и g ${multtNumber()}`);
-        console.log(`деление чисел f и g ${divvNumber()}`);
+        console.log(`сложение чисел ${numF} и ${numG} равна ${addNumber()}`);
+        console.log(`разность чисел ${numF} и ${numG}  равна ${diffNumber()}`);
+        console.log(`умножение чисел ${numF} и ${numG} равна ${multtNumber()}`);
+        console.log(`деление чисел ${numF} и ${numG} равна ${divvNumber()}`);
     </script>
 </body>
 
